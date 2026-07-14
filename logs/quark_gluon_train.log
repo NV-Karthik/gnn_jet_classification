@@ -1,0 +1,133 @@
+Training on device: cuda
+Task: quark_gluon_classification, Model Variant: lite
+Creating DataLoader for files 0 to 15
+Loading ../datasets/qgc/QG_jets_withbc_0.npz...
+Loading ../datasets/qgc/QG_jets_withbc_1.npz...
+Loading ../datasets/qgc/QG_jets_withbc_2.npz...
+Loading ../datasets/qgc/QG_jets_withbc_3.npz...
+Loading ../datasets/qgc/QG_jets_withbc_4.npz...
+Loading ../datasets/qgc/QG_jets_withbc_5.npz...
+Loading ../datasets/qgc/QG_jets_withbc_6.npz...
+Loading ../datasets/qgc/QG_jets_withbc_7.npz...
+Loading ../datasets/qgc/QG_jets_withbc_8.npz...
+Loading ../datasets/qgc/QG_jets_withbc_9.npz...
+Loading ../datasets/qgc/QG_jets_withbc_10.npz...
+Loading ../datasets/qgc/QG_jets_withbc_11.npz...
+Loading ../datasets/qgc/QG_jets_withbc_12.npz...
+Loading ../datasets/qgc/QG_jets_withbc_13.npz...
+Loading ../datasets/qgc/QG_jets_withbc_14.npz...
+Loading ../datasets/qgc/QG_jets_withbc_15.npz...
+Dataset fully loaded. Total Jets: 1600000
+Creating DataLoader for files 16 to 17
+Loading ../datasets/qgc/QG_jets_withbc_16.npz...
+Loading ../datasets/qgc/QG_jets_withbc_17.npz...
+Dataset fully loaded. Total Jets: 200000
+Using Gradient Accumulation: 12 steps of size 32 to simulate batch size 384
+Epoch 1/20
+--------------------
+Train Loss: 0.4972 | Train Acc: 0.7625
+Val Loss:   0.4603 | Val Acc:   0.7894
+Validation accuracy increased (0.0000 --> 0.7894). Saving this as best model...
+
+Epoch 2/20
+--------------------
+Train Loss: 0.4475 | Train Acc: 0.7992
+Val Loss:   0.4378 | Val Acc:   0.8042
+Validation accuracy increased (0.7894 --> 0.8042). Saving this as best model...
+
+Epoch 3/20
+--------------------
+Train Loss: 0.4343 | Train Acc: 0.8066
+Val Loss:   0.4293 | Val Acc:   0.8089
+Validation accuracy increased (0.8042 --> 0.8089). Saving this as best model...
+
+Epoch 4/20
+--------------------
+Train Loss: 0.4290 | Train Acc: 0.8088
+Val Loss:   0.4490 | Val Acc:   0.7939
+
+Epoch 5/20
+--------------------
+Train Loss: 0.4237 | Train Acc: 0.8113
+Val Loss:   0.4183 | Val Acc:   0.8149
+Validation accuracy increased (0.8089 --> 0.8149). Saving this as best model...
+
+Epoch 6/20
+--------------------
+Train Loss: 0.4191 | Train Acc: 0.8142
+Val Loss:   0.4171 | Val Acc:   0.8160
+Validation accuracy increased (0.8149 --> 0.8160). Saving this as best model...
+
+Epoch 7/20
+--------------------
+Train Loss: 0.4171 | Train Acc: 0.8156
+Val Loss:   0.4214 | Val Acc:   0.8142
+
+Epoch 8/20
+--------------------
+Train Loss: 0.4150 | Train Acc: 0.8171
+Val Loss:   0.4112 | Val Acc:   0.8199
+Validation accuracy increased (0.8160 --> 0.8199). Saving this as best model...
+
+Epoch 9/20
+--------------------
+Train Loss: 0.4141 | Train Acc: 0.8177
+Val Loss:   0.4117 | Val Acc:   0.8193
+
+Epoch 10/20
+--------------------
+Train Loss: 0.4131 | Train Acc: 0.8183
+Val Loss:   0.4144 | Val Acc:   0.8168
+
+Epoch 11/20
+--------------------
+Train Loss: 0.4123 | Train Acc: 0.8189
+Val Loss:   0.4107 | Val Acc:   0.8195
+
+Epoch 12/20
+--------------------
+Train Loss: 0.4111 | Train Acc: 0.8198
+Val Loss:   0.4281 | Val Acc:   0.8112
+
+Epoch 13/20
+--------------------
+Train Loss: 0.4108 | Train Acc: 0.8199
+Val Loss:   0.4254 | Val Acc:   0.8146
+
+Epoch 14/20
+--------------------
+Train Loss: 0.4099 | Train Acc: 0.8204
+Val Loss:   0.4236 | Val Acc:   0.8181
+
+Epoch 15/20
+--------------------
+Train Loss: 0.4093 | Train Acc: 0.8206
+Val Loss:   0.4115 | Val Acc:   0.8199
+
+Epoch 16/20
+--------------------
+Train Loss: 0.4089 | Train Acc: 0.8208
+Val Loss:   0.4110 | Val Acc:   0.8192
+
+Epoch 17/20
+--------------------
+Train Loss: 0.4082 | Train Acc: 0.8212
+Val Loss:   0.4534 | Val Acc:   0.7991
+
+Epoch 18/20
+--------------------
+Train Loss: 0.4081 | Train Acc: 0.8215
+Val Loss:   0.4326 | Val Acc:   0.8061
+
+Epoch 19/20
+--------------------
+Train Loss: 0.4081 | Train Acc: 0.8214
+Val Loss:   0.4077 | Val Acc:   0.8214
+Validation accuracy increased (0.8199 --> 0.8214). Saving this as best model...
+
+Epoch 20/20
+--------------------
+Train Loss: 0.4074 | Train Acc: 0.8217
+Val Loss:   0.4089 | Val Acc:   0.8202
+
+Training complete. Best Validation Accuracy: 0.8214

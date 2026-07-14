@@ -1,0 +1,9 @@
+Evaluating with device: cuda
+Successfully loaded weights from particlenet_best_model.pth
+Data successfully processed. Final shape: (404000, 200, 4)
+=== ParticleNet Final Test Results ===
+Accuracy:                    0.9307
+ROC AUC:                     0.9809
+Background Rejection @ 50%:  201.1
+Background Rejection @ 30%:  602.7
+======================================

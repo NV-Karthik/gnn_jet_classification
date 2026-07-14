@@ -1,0 +1,13 @@
+Evaluating with device: cuda
+Task: quark_gluon_classification, Model Variant: lite
+Creating DataLoader for files 18 to 19
+Loading ../datasets/qgc/QG_jets_withbc_18.npz...
+Loading ../datasets/qgc/QG_jets_withbc_19.npz...
+Dataset fully loaded. Total Jets: 200000
+Successfully loaded weights from particlenet_best_model.pth
+=== ParticleNet Final Test Results ===
+Accuracy:                    0.8209
+ROC AUC:                     0.8966
+Background Rejection @ 50%:  32.2
+Background Rejection @ 30%:  85.5
+======================================

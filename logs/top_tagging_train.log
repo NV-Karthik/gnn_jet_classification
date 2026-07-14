@@ -1,0 +1,120 @@
+Training on device: cuda
+Task: top_tagging, Model Variant: lite
+Data successfully processed. Final shape: (1211000, 200, 4)
+Data successfully processed. Final shape: (403000, 200, 4)
+Using Gradient Accumulation: 12 steps of size 32 to simulate batch size 384
+Epoch 1/20
+--------------------
+Train Loss: 0.3743 | Train Acc: 0.8294
+Val Loss:   0.2510 | Val Acc:   0.9014
+Validation accuracy increased (0.0000 --> 0.9014). Saving this as best model...
+
+Epoch 2/20
+--------------------
+Train Loss: 0.2404 | Train Acc: 0.9034
+Val Loss:   0.2321 | Val Acc:   0.9048
+Validation accuracy increased (0.9014 --> 0.9048). Saving this as best model...
+
+Epoch 3/20
+--------------------
+Train Loss: 0.2234 | Train Acc: 0.9085
+Val Loss:   0.2252 | Val Acc:   0.9079
+Validation accuracy increased (0.9048 --> 0.9079). Saving this as best model...
+
+Epoch 4/20
+--------------------
+Train Loss: 0.2128 | Train Acc: 0.9132
+Val Loss:   0.2112 | Val Acc:   0.9141
+Validation accuracy increased (0.9079 --> 0.9141). Saving this as best model...
+
+Epoch 5/20
+--------------------
+Train Loss: 0.2050 | Train Acc: 0.9163
+Val Loss:   0.2074 | Val Acc:   0.9149
+Validation accuracy increased (0.9141 --> 0.9149). Saving this as best model...
+
+Epoch 6/20
+--------------------
+Train Loss: 0.1999 | Train Acc: 0.9189
+Val Loss:   0.1987 | Val Acc:   0.9197
+Validation accuracy increased (0.9149 --> 0.9197). Saving this as best model...
+
+Epoch 7/20
+--------------------
+Train Loss: 0.1950 | Train Acc: 0.9212
+Val Loss:   0.1921 | Val Acc:   0.9222
+Validation accuracy increased (0.9197 --> 0.9222). Saving this as best model...
+
+Epoch 8/20
+--------------------
+Train Loss: 0.1912 | Train Acc: 0.9229
+Val Loss:   0.1892 | Val Acc:   0.9231
+Validation accuracy increased (0.9222 --> 0.9231). Saving this as best model...
+
+Epoch 9/20
+--------------------
+Train Loss: 0.1879 | Train Acc: 0.9243
+Val Loss:   0.1853 | Val Acc:   0.9251
+Validation accuracy increased (0.9231 --> 0.9251). Saving this as best model...
+
+Epoch 10/20
+--------------------
+Train Loss: 0.1859 | Train Acc: 0.9252
+Val Loss:   0.1871 | Val Acc:   0.9236
+
+Epoch 11/20
+--------------------
+Train Loss: 0.1833 | Train Acc: 0.9262
+Val Loss:   0.1808 | Val Acc:   0.9270
+Validation accuracy increased (0.9251 --> 0.9270). Saving this as best model...
+
+Epoch 12/20
+--------------------
+Train Loss: 0.1807 | Train Acc: 0.9276
+Val Loss:   0.1849 | Val Acc:   0.9255
+
+Epoch 13/20
+--------------------
+Train Loss: 0.1790 | Train Acc: 0.9281
+Val Loss:   0.1813 | Val Acc:   0.9268
+
+Epoch 14/20
+--------------------
+Train Loss: 0.1779 | Train Acc: 0.9286
+Val Loss:   0.1779 | Val Acc:   0.9283
+Validation accuracy increased (0.9270 --> 0.9283). Saving this as best model...
+
+Epoch 15/20
+--------------------
+Train Loss: 0.1772 | Train Acc: 0.9289
+Val Loss:   0.1790 | Val Acc:   0.9277
+
+Epoch 16/20
+--------------------
+Train Loss: 0.1760 | Train Acc: 0.9293
+Val Loss:   0.1751 | Val Acc:   0.9293
+Validation accuracy increased (0.9283 --> 0.9293). Saving this as best model...
+
+Epoch 17/20
+--------------------
+Train Loss: 0.1752 | Train Acc: 0.9296
+Val Loss:   0.1751 | Val Acc:   0.9296
+Validation accuracy increased (0.9293 --> 0.9296). Saving this as best model...
+
+Epoch 18/20
+--------------------
+Train Loss: 0.1746 | Train Acc: 0.9301
+Val Loss:   0.1741 | Val Acc:   0.9301
+Validation accuracy increased (0.9296 --> 0.9301). Saving this as best model...
+
+Epoch 19/20
+--------------------
+Train Loss: 0.1741 | Train Acc: 0.9300
+Val Loss:   0.1812 | Val Acc:   0.9263
+
+Epoch 20/20
+--------------------
+Train Loss: 0.1739 | Train Acc: 0.9303
+Val Loss:   0.1738 | Val Acc:   0.9299
+
+Training complete. Best Validation Accuracy: 0.9301
