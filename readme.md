@@ -12,10 +12,10 @@ Due to the sparse-nature of the dataset, the current graph-network can learn top
 
 Major enhancement of this repo is the implementation of:
 
-1. Gradient Accumulation: to accumulate gradients from micro-batch-size of 32 to achieve performance of recommended-batch-size of 384/1024.
-2. Automatic Mixed Precision: BF16 Forward/Backward passes and FP32 weight tensors.
+1. Gradient Accumulation: to accumulate gradients from micro-batch-size of 32 and achieve performance of recommended-batch-size of 384/1024.
+2. Automatic Mixed Precision: BF16 for Forward/Backward passes and FP32 for weight tensors.
 
-These optimizations helped acheive near reported accuracies on mobile GPU hardware with limited VRAM.
+These optimizations helped acheive near reported accuracies on mobile GPUs with limited VRAM.
 
 ## Results
 
@@ -31,22 +31,20 @@ Despite a reduction in model complexity compared to the paper's baseline (366k p
 ## Repo Structure
 
 ```text
-├── logs/
-├── saved_models/
-├── research/
+├── logs/  # Training and testing logs for both benchmarks
+├── saved_models/   # Serialized model weights for the best models
+├── research/   # notebooks for research and experimentation
 ├── dataloader.py
 ├── dataprep.py
 ├── helpers.py
 ├── models.py
 ├── train.py
 └── test.py
-
 ```
 
 ## Usage
 
 Variables like batch_size, epochs, and model type (Lite vs Full) can be configured inside `train.py` and `test.py`. Once the variables are updated,
-
 
 **To train the model:**
 
@@ -66,8 +64,8 @@ python test.py
 
 1. **Paper:** Qu, H., & Gouskos, L. (2020). *Jet Tagging via Particle Clouds*. [arXiv:1902.08570 [hep-ph]](https://arxiv.org/abs/1902.08570).
 
+2. **Top Tagging Dataset:** Kasieczka, G., Plehn, T., Thompson, J., & Russel, M. (2019). [Top Quark Tagging Reference Dataset](https://zenodo.org/record/2603256).
 
-2. **Top Tagging Dataset:** Kasieczka, G., Plehn, T., Thompson, J., & Russel, M. (2019). [Top Quark Tagging Reference Dataset](https://www.google.com/search?q=https://zenodo.org/record/2603256).
-
-
-3. **Quark-Gluon Jet Classification Dataset:** Komiske, P. T., Metodiev, E. M., & Thaler, J. (2019). [Energy Flow Networks: Deep Sets for Particle Jets](https://www.google.com/search?q=https://zenodo.org/record/3164691).
+3. **Quark-Gluon Jet Classification Dataset:** Komiske, P., Metodiev, E.& Thaler, J. (2019). Pythia8 Quark and Gluon Jets for Energy Flow (Version v1) [Dataset]. Zenodo. [Link](https://doi.org/10.5281/zenodo.3164691).
+   
+4. P. T. Komiske, E. M. Metodiev, J. Thaler, Energy Flow Networks: Deep Sets for Particle Jets, JHEP 01 (2019) 121, [arXiv:1810.05165](https://arxiv.org/abs/1810.05165).
